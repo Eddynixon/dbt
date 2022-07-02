@@ -17,9 +17,8 @@ models:
       - name: status
         tests:
           - accepted_values:
-              values:
-                - completed
-                - shipped
-                - returned
-                - return_pending
-                - placed
+              values: ['completed', 'shipped', 'returned', 'return_pending', 'placed']                
+                
+                
+                
+                
