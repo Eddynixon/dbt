@@ -17,7 +17,13 @@ models:
       - name: status
         tests:
           - accepted_values:
-              values: ['completed', 'shipped', 'returned', 'return_pending', 'placed']                
+              values: ['completed', 'shipped', 'returned', 'return_pending', 'placed']
+  - name : stg_payments 
+    columns:
+      - name: order_id
+        test:
+         - unique
+         - not_null            
                 
                 
                 
